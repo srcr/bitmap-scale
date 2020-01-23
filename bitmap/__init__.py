@@ -9,7 +9,7 @@ AUTHOR_EMAIL = "peter@icebear.net"
 
 DESCRIPTION = "a module to create a bitmap of the malware sample"
 
-LICENSE = "https://github.com/srcr/bitmap-scale/blob/master/bitmap-scale/LICENSE"
+LICENSE = "https://github.com/srcr/bitmap-scale/blob/master/LICENSE"
 
 URL = "https://github.com/srcr/bitmap-scale"
 
