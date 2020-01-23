@@ -16,10 +16,10 @@ class Commands(scale.Commands):
         width = 64
         resize = 3
         binary = np.fromfile(file.file_path, dtype='uint8')
-		lenght = len(binary)
-		height = math.ceil(length / width)
-		reshaped = np.resize(binary,(height, width))
-		dimension = (width * resize, height * resize)
+        lenght = len(binary)
+        height = math.ceil(length / width)
+        reshaped = np.resize(binary,(height, width))
+        dimension = (width * resize, height * resize)
         resized = cv2.resize(reshaped, dimension, interpolation = cv2.INTER_AREA)
         image = cv2.imencode('.png', resized)
         encoded = base64.b64encode(image[1])
