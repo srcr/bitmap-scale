@@ -1,6 +1,9 @@
 # bitmap-scale
 Snake scale to create bitmap images of malware samples
 
+![Screenshot](https://github.com/srcr/bitmap-scale/raw/master/example/bitmap-scale.png "Screenshot of the bitmap-scale analysis")
+
+
 ## Installation
 
 This scale can be installed in two way, pip or by cloning the respository and pointing Snake to it.
