@@ -22,5 +22,10 @@ class Commands(scale.Commands):
         dimension = (width * resize, height * resize)
         resized = cv2.resize(reshaped, dimension, interpolation = cv2.INTER_AREA)
         image = cv2.imencode('.png', resized)
-        encoded = base64.b64encode(image[1])
-        return {'bitmap': str('![Bitmap](data:image/png;base64,' + encoded.decode('ascii') + ')', encoding='latin-1')}
+        b64bytes = base64.b64encode(image[1])
+        b64str = b64bytes.decode('utf-8')
+        return {'bitmap': b64str}
+
+    def bitmap_markdown(self, json):
+        output = ('![Bitmap](data:image/png;base64,' + json['bitmap'] + ')')
+        return output
