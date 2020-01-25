@@ -11,8 +11,10 @@ This scale can be installed in two way, pip or by cloning the respository and po
 Once installed Snake and the Celery workers must be restarted.
 
 This is scale is depending on 2 python modules :
-Numpy
-OpenCV
+* OpenCV
+* base64
+* Numpy
+* math
 
 > Note: Any missing dependencies will be reported in Snake's log!
 
@@ -38,9 +40,7 @@ git clone https://github.com/srcr/bitmap-scale.git <SCALE_DIR>
 
 # 2. Add directory to snake.conf
 [snip]
-snake_scale_dirs: [
-  '<SCALE_DIR>'
-]
+snake_scale_dirs: [ '<SCALE_DIR>' ]
 [snip]
 
 # 3. Install python requirements
